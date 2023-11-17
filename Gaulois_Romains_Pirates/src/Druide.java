@@ -9,6 +9,7 @@ public class Druide extends Gaulois {
         super(force, nom, metier);
         this.maxPuissance = maxPuissance;
         this.minPuissance = minPuissance;
+
     }
 
     public void distributionPopo(Village v) {
@@ -19,5 +20,12 @@ public class Druide extends Gaulois {
         }
 
 
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                " maxPuissance=" + maxPuissance +
+                ", minPuissance=" + minPuissance ;
     }
 }

@@ -20,4 +20,10 @@ public class Romains extends Humains implements SeBattre {
     public void seBattre(SeBattre h) {
         //TODO : Implementer
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                " , grade: " + grade;
+    }
 }

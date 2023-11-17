@@ -27,4 +27,11 @@ public abstract class Humains {
     public static Random getRdm() {
         return new Random();
     }
+
+    @Override
+    public String toString() {
+        return this.getClass().getName() +
+                " : force: " + force +
+                ", nom: " + nom ;
+    }
 }
