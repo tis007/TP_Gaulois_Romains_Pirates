@@ -1,8 +1,10 @@
 public class Gaulois extends Humains implements SeBattre{
 private String metier;
+private int forceCombat;
     public Gaulois(int force, String nom, String metier) {
         super(force, nom);
         this.metier = metier;
+        this.forceCombat = force;
     }
 public Gaulois(String nom, String metier){
         this(1, nom, metier);
@@ -27,5 +29,13 @@ public Gaulois(String nom, String metier){
     public String toString() {
         return super.toString() +
                 " metier='" + metier ;
+    }
+
+    public int getForceCombat() {
+        return forceCombat;
+    }
+
+    public void setForceCombat(int forceCombat) {
+        this.forceCombat = forceCombat;
     }
 }

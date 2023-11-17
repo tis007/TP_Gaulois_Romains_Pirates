@@ -35,7 +35,7 @@ public class Camp extends RegroupementHumain {
     }
 
 
-    public void addGaulois(Romains r) {
+    public void addRomain(Romains r) {
         if (!r.getGrade().equals(Grade.CHEF)){
             this.addHumain(r);
         } else {

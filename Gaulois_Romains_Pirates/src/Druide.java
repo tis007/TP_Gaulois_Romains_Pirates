@@ -15,8 +15,11 @@ public class Druide extends Gaulois {
     public void distributionPopo(Village v) {
         Random rdm = new Random();
         int puissancePopo = rdm.nextInt(maxPuissance + 1 - minPuissance) + minPuissance;
-        for (Humains g : v.justLesBagarreurs()){
-            ((Gaulois) g).boirePopo(puissancePopo);
+
+        for (Humains g : v.justLesBagarreurs()) {
+            if (this.getForce() <= 5 && !this.getMetier().equals("CHEF")&& !(g instanceof Druide)) {
+                ((Gaulois) g).boirePopo(puissancePopo);
+            }
         }
 
 
