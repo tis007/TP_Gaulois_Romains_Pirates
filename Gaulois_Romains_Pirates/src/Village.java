@@ -5,6 +5,7 @@ public class Village extends RegroupementHumain {
 
     public Village(Humains chef) {
         super(chef);
+        addGaulois((Gaulois) chef);
     }
 
     @Override
@@ -23,6 +24,13 @@ public class Village extends RegroupementHumain {
         return bagarreurs;
     }
 
+    public void distributionPotion() {
+        for (Humains h : this.getLeRegroupement()){
+            if (h instanceof Druide) {
+                ((Druide) h ).distributionPopo(this);
+            }
+        }
+    }
 
     public void addGaulois(Gaulois g) {
         if (!g.getMetier().equalsIgnoreCase("CHEF")) {

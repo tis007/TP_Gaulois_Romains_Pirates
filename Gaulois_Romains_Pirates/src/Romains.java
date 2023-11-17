@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Romains extends Humains implements SeBattre {
+public class Romains extends Humains implements SeBattre, Comparable<Romains> {
     private Grade grade;
     private int forceCombat;
     public Romains(int force, String nom, Grade grade){
@@ -37,5 +37,16 @@ public class Romains extends Humains implements SeBattre {
     public String toString() {
         return super.toString() +
                 " , grade: " + grade;
+    }
+
+    @Override
+    public int compareTo(Romains r) {
+        if (!(this.getForce() == r.getForce())){
+            return Integer.compare(this.getForce(), r.getForce());
+        }
+        if (!(this.getNom().compareTo(r.getNom()) == 0)) {
+            return this.getNom().compareTo(r.getNom());
+        }
+        return this.getGrade().compareTo(r.getGrade());
     }
 }

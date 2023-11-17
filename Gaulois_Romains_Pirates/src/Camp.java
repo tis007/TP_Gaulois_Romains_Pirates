@@ -34,6 +34,12 @@ public class Camp extends RegroupementHumain {
         return bagarreurs;
     }
 
+    public void romainGetCombatForce(){
+        for (Humains r : this.getLeRegroupement()) {
+            ((Romains) r).setForceCombat(r.getForce());
+        }
+    }
+
 
     public void addRomain(Romains r) {
         if (!r.getGrade().equals(Grade.CHEF)){
