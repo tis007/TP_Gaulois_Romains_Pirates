@@ -5,7 +5,7 @@ public class Village extends RegroupementHumain {
 
     public Village(Humains chef) {
         super(chef);
-        addGaulois((Gaulois) chef);
+        this.addHumain(chef);
     }
 
     @Override

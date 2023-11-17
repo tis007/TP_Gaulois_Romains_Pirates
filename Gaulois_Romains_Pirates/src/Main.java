@@ -1,4 +1,5 @@
 import java.security.Guard;
+import java.util.List;
 import java.util.Random;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -16,20 +17,38 @@ public class Main {
         Gaulois Agecanonix = new Gaulois(" Agecanonix", "RETAITE");
         Gaulois Assurancetourix = new Gaulois("  Assurancetourix", "BARDE");
         Gaulois Bonemine = new Gaulois("Bonemine", "FEMME DU CHEF");
-        Gaulois Astérix = new Gaulois("Astérix", "HEROS");
-        Gaulois Obélix = new Gaulois("Obélix", "TAILLEUR DE MENHIR");
-        Gaulois Cétautomatix = new Gaulois("Cétautomatix", "FORGERON");
+        Gaulois Asterix = new Gaulois("Astérix", "HEROS");
+        Gaulois Obelix = new Gaulois("Obélix", "TAILLEUR DE MENHIR");
+        Gaulois Cetautomatix = new Gaulois("Cétautomatix", "FORGERON");
         Gaulois Tragicomix = new Gaulois("Tragicomix", "BEAU GOSSE");
-        Gaulois Ordralbabétix = new Gaulois("Ordralbabétix ", "POISSONIER");
+        Gaulois Ordralbabetix = new Gaulois("Ordralbabétix ", "POISSONIER");
         Gaulois Falbala = new Gaulois("Falbala", "FIANCEE");
 
         Druide Panoramix = new Druide(1, "Panoramix", "DRUIDE", 65, 30);
 
         Village LesIrreductibles = new Village(Abraracourcix);
         LesIrreductibles.addGaulois(Agecanonix);
+        LesIrreductibles.addGaulois(Assurancetourix);
+        LesIrreductibles.addGaulois(Bonemine);
+        LesIrreductibles.addGaulois(Asterix);
+        LesIrreductibles.addGaulois(Obelix);
+        LesIrreductibles.addGaulois(Cetautomatix);
+        LesIrreductibles.addGaulois(Tragicomix);
+        LesIrreductibles.addGaulois(Ordralbabetix);
+        LesIrreductibles.addGaulois(Falbala);
+        LesIrreductibles.addGaulois(Panoramix);
 
 
+        System.out.println(LesIrreductibles.seRencontrer(Agecanonix, Cetautomatix));
 
+Camp Babaorum = new Camp(CaiusObtus);
+Babaorum.addRomain(Brutus);
+Babaorum.addRomain(Briseradius);
+Babaorum.addRomain(CaligulaMinus);
+Babaorum.addRomain(Chorus);
+Babaorum.addRomain(Milexcus);
+System.out.println(Babaorum.seRencontrer(Brutus, Milexcus));
+System.out.println(Babaorum.seRencontrer(Milexcus, Brutus));
 
 
     }

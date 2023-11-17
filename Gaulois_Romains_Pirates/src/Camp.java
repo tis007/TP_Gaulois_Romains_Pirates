@@ -11,9 +11,9 @@ public class Camp extends RegroupementHumain {
     @Override
     public String seRencontrer(Humains h1, Humains h2) {
         if (((Romains) h1).getGrade().compareTo(((Romains) h2).getGrade()) > 0) {
-            return seSaluer((Romains) h1, (Romains) h2);
-        } else if (((Romains) h1).getGrade().compareTo(((Romains) h2).getGrade()) < 0) {
             return seSaluer((Romains) h2, (Romains) h1);
+        } else if (((Romains) h1).getGrade().compareTo(((Romains) h2).getGrade()) < 0) {
+            return seSaluer((Romains) h1, (Romains) h2);
         } else {
             return seSaluer((Romains) h2, (Romains) h1) + "\n" + seSaluer((Romains) h1, (Romains) h2);
         }

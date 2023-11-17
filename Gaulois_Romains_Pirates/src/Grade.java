@@ -1,3 +1,3 @@
 public enum Grade {
-    CHEF, CENTURION, LEGIONNAIRE, SOLDAT
+    CHEF, CENTURION, SOLDAT
 }
