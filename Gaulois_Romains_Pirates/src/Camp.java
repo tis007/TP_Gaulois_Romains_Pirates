@@ -10,8 +10,10 @@ public class Camp extends RegroupementHumain {
 
     @Override
     public String seRencontrer(Humains h1, Humains h2) {
+        if (((Romains) h1).getGrade().compareTo(((Romains) h2).getGrade()) > 0) {
+
+        }
         return null;
-        //TODO : TO IMPLEMENT
     }
 
     public ArrayList<Humains> justLesBagarreurs() {

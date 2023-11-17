@@ -9,8 +9,7 @@ public class Village extends RegroupementHumain {
 
     @Override
     public String seRencontrer(Humains h1, Humains h2) {
-        return null;
-        //TODO : TO IMPLEMENT
+        return "Bonjour, je suis " + h1.getNom() + "\n Bonjour " + h1.getNom() + ", moi c’est " + h2.getNom();
     }
 
     @Override
