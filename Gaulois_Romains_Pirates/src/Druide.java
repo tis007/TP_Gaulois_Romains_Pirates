@@ -1,4 +1,7 @@
-public class Druide extends Gaulois{
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Druide extends Gaulois {
     private int maxPuissance;
     private int minPuissance;
 
@@ -8,4 +11,13 @@ public class Druide extends Gaulois{
         this.minPuissance = minPuissance;
     }
 
+    public void distributionPopo(Village v) {
+        Random rdm = new Random();
+        int puissancePopo = rdm.nextInt(maxPuissance + 1 - minPuissance) + minPuissance;
+        for (Humains g : v.justLesBagarreurs()){
+            ((Gaulois) g).boirePopo(puissancePopo);
+        }
+
+
+    }
 }

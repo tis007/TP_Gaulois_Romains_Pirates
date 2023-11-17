@@ -8,4 +8,13 @@ private String metier;
     public String getMetier() {
         return metier;
     }
+
+    public void boirePopo(int puissancePopo){
+        this.setForce(this.getForce()+puissancePopo);
+    }
+
+    @Override
+    public void seBattre(SeBattre h) {
+        //TODO : Implementer
+    }
 }

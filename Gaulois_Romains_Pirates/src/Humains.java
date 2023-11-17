@@ -1,6 +1,10 @@
+import java.util.Random;
+
 public abstract class Humains {
     private int force;
     private String nom;
+
+
 
 
     public Humains(int force, String nom) {
@@ -14,5 +18,13 @@ public abstract class Humains {
 
     public String getNom() {
         return nom;
+    }
+
+    public void setForce(int force) {
+        this.force = force;
+    }
+
+    public static Random getRdm() {
+        return new Random();
     }
 }
