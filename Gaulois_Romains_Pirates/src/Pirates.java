@@ -34,5 +34,6 @@ public class Pirates extends Humains implements SeBattre{
 
     public void boire(int puissanceRhum){
         this.setNiveauEbriete(niveauEbriete + puissanceRhum);
+        this.setForceCombat(puissanceRhum*1000);
     }
 }

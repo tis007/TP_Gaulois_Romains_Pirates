@@ -17,11 +17,11 @@ public class Main {
         Gaulois Agecanonix = new Gaulois(" Agecanonix", "RETAITE");
         Gaulois Assurancetourix = new Gaulois("  Assurancetourix", "BARDE");
         Gaulois Bonemine = new Gaulois("Bonemine", "FEMME DU CHEF");
-        Gaulois Asterix = new Gaulois("Astérix", "HEROS");
-        Gaulois Obelix = new Gaulois("Obélix", "TAILLEUR DE MENHIR");
-        Gaulois Cetautomatix = new Gaulois("Cétautomatix", "FORGERON");
+        Gaulois Asterix = new Gaulois("Asterix", "HEROS");
+        Gaulois Obelix = new Gaulois("Obelix", "TAILLEUR DE MENHIR");
+        Gaulois Cetautomatix = new Gaulois("Cetautomatix", "FORGERON");
         Gaulois Tragicomix = new Gaulois("Tragicomix", "BEAU GOSSE");
-        Gaulois Ordralbabetix = new Gaulois("Ordralbabétix ", "POISSONIER");
+        Gaulois Ordralbabetix = new Gaulois("Ordralbabetix ", "POISSONIER");
         Gaulois Falbala = new Gaulois("Falbala", "FIANCEE");
 
         Druide Panoramix = new Druide(1, "Panoramix", "DRUIDE", 65, 30);
