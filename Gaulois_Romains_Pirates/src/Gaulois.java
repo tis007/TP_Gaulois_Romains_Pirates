@@ -20,7 +20,9 @@ public class Gaulois extends Humains implements SeBattre, Comparable<Gaulois> {
     }
 
     public void boirePopo(int puissancePopo) {
-        this.setForceCombat(this.getForce() + puissancePopo);
+        if (this.forceCombat <=5) {
+            this.setForceCombat(this.getForce() + puissancePopo);
+        }
     }
 
     @Override
